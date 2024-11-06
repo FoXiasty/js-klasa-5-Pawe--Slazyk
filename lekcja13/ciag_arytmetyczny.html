@@ -18,10 +18,14 @@
     <form>
         <fieldset>
             <legend>Suma n początkowych wyrazów ciągu arytmetycznego</legend>
-            <p><label for="pierwszy">Podaj pierwszy wyraz ciągu: a₂ = <input type="number" id="a1"> (a₁ ∈ R)</label></p>
-            <p><label for="drugi">Podaj drugi wyraz ciągu: a₂ = <input type="number" id="a2"> (a₂ ∈ R)</label></p>
-            <p><label for="ilosc">Dla ilu wyrazów ciągu obliczyć sumę n = <input type="number" id="a3"> (n ∈ N, n ≥ 1) </label></p>
-            <input type="button" value="Dla danego n wpisz max.3 początkowe i 3 końcowe wyrazy ciągu oraz oblicz jego sumę">
+            <p><label>Podaj pierwszy wyraz ciągu: a₂ = <input type="number" id="a1"> (a₁ ∈ R)</label></p>
+            <p><label>Podaj drugi wyraz ciągu: a₂ = <input type="number" id="a2"> (a₂ ∈ R)</label></p>
+            <p><label>Dla ilu wyrazów ciągu obliczyć sumę n = <input type="number" id="a3"> (n ∈ N, n ≥ 1) </label></p>
+            <input type="button" value="Dla danego n wpisz max.3 początkowe i 3 końcowe wyrazy ciągu oraz oblicz jego sumę" id="baton">
+                <div>
+                    <ul id="utput"></ul>
+                </div>
+            <p id="utput2"></p>
         </fieldset>
     </form>
 </body>
