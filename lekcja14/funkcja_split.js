@@ -8,5 +8,5 @@ console.log(p1.textContent.split("|"));
 })
 
 baton2.addEventListener("click", () => {
-console.log(p2.textContent.split(" ").slice(0,17));
+console.log(p2.textContent.split(" ").slice(0,16));
 })

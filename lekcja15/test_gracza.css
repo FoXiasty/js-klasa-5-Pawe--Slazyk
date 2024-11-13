@@ -1,0 +1,37 @@
+body{
+    background-color: lightblue;
+    font-family: 'Calibri';
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    color: midnightblue;
+   } 
+   ol{
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+    border-color: royalblue;
+    padding-left: 40;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+   }
+   li{
+    border-style: solid;
+    border-width: 1px;
+    border-color: cadetblue;
+    margin-left: -15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+   a{
+    color: dodgerblue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+   }
