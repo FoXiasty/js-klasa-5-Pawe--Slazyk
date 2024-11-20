@@ -1,30 +1,29 @@
-const baton1 = document.querySelector("#baton1");
-const baton2 = document.querySelector("#baton2");
-const baton3 = document.querySelector("#baton3");
-const baton4 = document.querySelector("#baton4");
-const baton5 = document.querySelector("#baton5");
+const zespol = [];
 
-baton1.addEventListener("click", () => {
-    let concat1 = p1.textContent.concat("Ritchie Blackmore,");
-    p1.textContent = concat1
-    })
+function zespolyes() {
+    document.querySelector("#p1").textContent = 
+        "Deep Purple - brytyjski zespół rockowy, założony w 1968 w składzie: " + 
+        zespol.filter(String).join(", ") +
+        ".";
+}
 
-baton2.addEventListener("click", () => {
-    let concat2 = p1.textContent.concat("Jon Lord,");
-    p1.textContent = concat2
-    })
-
-baton3.addEventListener("click", () => {
-    let concat3 = p1.textContent.concat("Nick Simper,");
-    p1.textContent = concat3
-    })
-
-baton4.addEventListener("click", () => {
-    let concat4 = p1.textContent.concat("Ian Paice,");
-    p1.textContent = concat4
-    })
-
-baton5.addEventListener("click", () => {
-    let concat5 = p1.textContent.concat("Rod Evans.");
-    p1.textContent = concat5
-    })
+document.querySelector("#baton1").addEventListener("click", () => {
+    zespol[0] = "Ritchie Blackmore";
+    zespolyes();
+});
+document.querySelector("#baton2").addEventListener("click", () => {
+    zespol[1] = "Jon Lord";
+    zespolyes();
+});
+document.querySelector("#baton3").addEventListener("click", () => {
+    zespol[2] = "Nick Simper";
+    zespolyes();
+});
+document.querySelector("#baton4").addEventListener("click", () => {
+    zespol[3] = "Ian Paice";
+    zespolyes();
+});
+document.querySelector("#baton5").addEventListener("click", () => {
+    zespol[4] = "Rod Evans";
+    zespolyes();
+});
