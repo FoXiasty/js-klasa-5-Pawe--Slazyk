@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="generator_tabel.js" defer></script>
+</head>
+<style>
+    h1{
+        text-decoration: wavy underline;
+        text-decoration-color: red;
+    }
+    div{
+        padding: 10px;
+        border-style: double;
+        border-width: 4px;
+        border-color: red;
+    }
+    input{
+        width: 100px;
+    }
+</style>
+<body>
+    <h1>Generator tabel HTML</h1>
+    <div>
+        Liczba Kolumn (maks 500): <input id="input1" type="number" max="500">
+        Liczba Wierszy (maks 500): <input id="input2" type="number" max="500">
+        <button id="baton">Generuj</button>
+    </div>
+    <table id="tabela">
+
+    </table>
+</body>
+</html>
