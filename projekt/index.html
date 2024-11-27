@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+    
+<body>
+    <form action="index.html" method="post" onsubmit="return validateForm()">
+        
+        <table>
+            <tr>
+                <td> <label for="pesel"> PESEL</label> </td> 
+                <td> <input type="text" id="pesel" name="pesel"> </td>
+            </tr>
+            <tr>
+                <td> <label for="imie"> Imię</label> </td> 
+                <td> <input type="text" id="imie" name="imie"> </td>
+            </tr>
+            <tr>
+                <td> <label for="nazwisko"> Nazwisko</label> </td> 
+                <td> <input type="text" id="nazwisko" name="nazwisko"> </td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend> Kolor oczu </legend>
+                <input type="radio" id="niebieskie" name="kolor_oczu" value="1">
+                <label for="niebieskie">niebieskie</label><br>
+
+                <input type="radio" id="zielone" name="kolor_oczu" value="2">
+                <label for="zielone">zielone</label><br>
+
+                <input type="radio" id="piwne" name="kolor_oczu" value="3">
+                <label for="piwne">piwne</label><br>
+        </fieldset>
+
+        <button id="baton" type="submit"> Zapisz</button>
+    </form>
+    
+</body>
+</html>
