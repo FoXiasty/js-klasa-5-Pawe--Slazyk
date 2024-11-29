@@ -9,8 +9,39 @@
 </head>
     
 <body>
-    <form action="index.html" method="post" onsubmit="return validateForm()">
+    <form action="index.php" method="post" onsubmit="return validateForm()">
         
+<?php
+    $success = true;
+    try{
+        $DB = new mysqli(
+            "127.0.0.1",
+            "paszport1",
+            "Paszport2024",
+            "paszport1",
+        );
+    } 
+    catch (Exception $e){
+        $success = false;
+?>
+    <p class="error">Błąd łączenia z bazą danych: <?= $e ?></p>
+<?php
+    }
+
+    if($success){
+?>
+        <p class="success">Połączono z bazą danych paszport1</p>
+<?php
+    }
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $PESEL = $_POST["pesel"];
+        $firstname = $_POST["imie"];
+        $lastname = $_POST["nazwiko"];
+        $color = $_POST["kolor"];
+        $DB -> query("INSERT INTO paszporty VALUES ('$PESEL' , '$firstname' , '$lastname' , '$color')");
+    }
+?>
         <table>
             <tr>
                 <td> <label for="pesel"> PESEL</label> </td> 

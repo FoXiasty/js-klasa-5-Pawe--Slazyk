@@ -27,6 +27,8 @@ function validateForm() {
         nazwisko.style.backgroundColor = "lightcoral";
         isValid = false;
     }
+
+
     
     return isValid;
 }
